@@ -1,5 +1,6 @@
 * {
   font-family: 'Cabin', sans-serif;
+  color: white;
 }
 h1, a{
   font-family: 'Teko', sans-serif;
@@ -9,12 +10,28 @@ a {
   letter-spacing: .2em;
   margin-right: 20px;
 }
-header {
-  color: white;
+p {
+  color: black;
+}
+p.focused {
+  background-color: rgba(20, 20, 20, .3);
+  padding: 10px;
 }
 .portrait {
   height: 400px;
   width: 310px;
+  padding: 10px;
+  margin: 10px;
+  border: 3px solid black;
+}
+.bg-mthood {
+  background-color: darkslategray;
+  background-image: url(images/mounthood_bradleythompson.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 45%;
+  overflow: hidden;
+  color: white;
 }
 .box {
   border: 1px solid blueviolet;
