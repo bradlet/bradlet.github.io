@@ -1,4 +1,10 @@
-
-header, footer, #content {
-  border: 1px solid Purple;
+* {
+  font-family: 'Cabin', sans-serif;
+}
+h1 {
+  font-family: 'Teko', sans-serif;
+}
+header {
+  background-color: #1873A5;
+  color: white;
 }
