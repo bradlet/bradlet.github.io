@@ -1,22 +1,33 @@
+/* 'Cabin' found via Google Fonts https://fonts.google.com/specimen/Cabin */
 * {
   font-family: 'Cabin', sans-serif;
   color: white;
 }
-h1, a{
-  font-family: 'Teko', sans-serif;
+header {
+  border-bottom: 3px solid black;
+  padding-top: 10px;
 }
+/* Needed added readability w/ the chosen font */
 a {
   font-size: 32px;
   letter-spacing: .2em;
   margin-right: 20px;
 }
+/* Want strong to place emphasis, 
+   but not completely alter text's appearance */
+strong {
+  color: inherit;
+}
 p {
   color: black;
 }
 p.focused {
-  background-color: rgba(20, 20, 20, .3);
+  background-color: rgba(20, 20, 20, .7);
+  border-radius: 7px;
   padding: 10px;
+  margin: 10px;
 }
+/* For Portrait layout pictures */
 .portrait {
   height: 400px;
   width: 310px;
@@ -32,7 +43,4 @@ p.focused {
   background-position-y: 45%;
   overflow: hidden;
   color: white;
-}
-.box {
-  border: 1px solid blueviolet;
 }
