@@ -1,6 +1,8 @@
 # bradlet.github.io
 Personal Portfolio Website
 
+Note: used Bootstrap in this project.
+
 ### Objective
 My goal with this website is to make a clean, mobile-first website.
 I chose to mix in a variety of different styling techniques to get

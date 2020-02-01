@@ -1,10 +1,9 @@
 /* 'Cabin' found via Google Fonts https://fonts.google.com/specimen/Cabin */
 * {
   font-family: 'Cabin', sans-serif;
-  color: white;
 }
-p, h2, h3, h4, h5{
-  color: black !important;
+h1, p.focused{
+  color: white !important;
 }
 /* Want strong to place emphasis, 
    but not completely alter text's appearance */
@@ -27,8 +26,12 @@ p.focused {
   padding: 10px;
   margin: 10px;
 }
+/* Because this isn't default behavior? */
+img {
+  width: 100%;
+}
 /* For Portrait layout pictures */
-.portrait {
+img.portrait {
   height: 400px;
   width: 310px;
   padding: 10px;
