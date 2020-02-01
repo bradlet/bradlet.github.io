@@ -3,6 +3,14 @@
   font-family: 'Cabin', sans-serif;
   color: white;
 }
+p, h2, h3, h4, h5{
+  color: black !important;
+}
+/* Want strong to place emphasis, 
+   but not completely alter text's appearance */
+strong {
+  color: inherit;
+}
 header {
   border-bottom: 3px solid black;
   padding-top: 10px;
@@ -12,14 +20,6 @@ a {
   font-size: 32px;
   letter-spacing: .2em;
   margin-right: 20px;
-}
-/* Want strong to place emphasis, 
-   but not completely alter text's appearance */
-strong {
-  color: inherit;
-}
-p {
-  color: black;
 }
 p.focused {
   background-color: rgba(20, 20, 20, .7);
