@@ -1,6 +1,6 @@
 /* 'Cabin' found via Google Fonts https://fonts.google.com/specimen/Cabin */
 * {
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
   color: white;
 }
 header {
@@ -10,7 +10,7 @@ header {
 /* Needed added readability w/ the chosen font */
 a {
   font-size: 32px;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   margin-right: 20px;
 }
 /* Want strong to place emphasis, 
@@ -22,7 +22,7 @@ p {
   color: black;
 }
 p.focused {
-  background-color: rgba(20, 20, 20, .7);
+  background-color: rgba(20, 20, 20, 0.7);
   border-radius: 7px;
   padding: 10px;
   margin: 10px;
