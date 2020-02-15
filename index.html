@@ -9,7 +9,10 @@
     />
 
     <link rel="stylesheet" href="css/styles.css" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Cabin|Teko:700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin|Teko:700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -29,16 +32,17 @@
   <body>
     <!-- Fluid container wrapping entire body -->
     <div class="container-fluid">
-      <header class="row bg-dark">
+      <header class="row bg-dark d-flex align-items-end">
         <div class="col col-lg-4">
-          <h1>BRADLEY THOMPSON</h1>
+          <h1 id="site-brand">BRADLEY THOMPSON</h1>
         </div>
-        <div class="col col-lg-8">
-          <nav class="nav nav-pills justify-content-end mb-4">
-              <a class="nav-link active" href="#">Home</a>
-              <a class="nav-link" href="resume_pg.html">Resume</a>
-              <a class="nav-link" href="projects_pg.html">Projects</a>
-              <a class="nav-link" href="personal_pg.html">Personal</a>
+        <div class="col col-lg-2"></div>
+        <div class="col col-lg-6">
+          <nav class="nav d-flex justify-content-end">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link inactive" href="resume_pg.html">Resume</a>
+            <a class="nav-link inactive" href="projects_pg.html">Projects</a>
+            <a class="nav-link inactive" href="personal_pg.html">Personal</a>
           </nav>
         </div>
       </header>
@@ -46,21 +50,24 @@
       <div id="content" class="container-fluid">
         <section class="row align-items-center justify-content-center">
           <div class="col col-lg-4">
-            <img src="images/me.jpg" class="portrait img-fluid" alt="Picture of me"/>
+            <img
+              src="images/me.jpg"
+              class="portrait img-fluid"
+              alt="Picture of me"
+            />
           </div>
           <div class="col col-lg-4">
             <h3>INTRODUCTION</h3>
             <p>
-              Hi, I am a computer science student at Portland State University. I'll be
-              completing my Bachelors of Science in Computer Science in March 2020. Then,
-              I will begin graduate school in pursuit of a Masters in Computer Science.
+              Hi, I am a computer science student at Portland State University.
+              I'll be completing my Bachelors of Science in Computer Science in
+              March 2020. Then, I will begin graduate school in pursuit of a
+              Masters in Computer Science.
             </p>
           </div>
         </section>
       </div>
-      <footer>
-
-      </footer>
+      <footer></footer>
     </div>
   </body>
 </html>
