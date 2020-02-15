@@ -1,112 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <link rel="stylesheet" href="css/styles.css" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Cabin|Teko:700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.
-        min.js"
-    ></script>
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Cabin|Teko:700&display=swap" rel="stylesheet" />
 
-    <title>Bradley Thompson's E-Portfolio</title>
-  </head>
-  <body>
-    <!-- Fluid container wrapping entire body -->
-    <div class="container-fluid">
-      <header class="row bg-dark d-flex align-items-end">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.
+        min.js"></script>
+
+  <title>Bradley Thompson's E-Portfolio</title>
+</head>
+
+<body>
+  <!-- Fluid container wrapping entire body -->
+  <div class="container-fluid">
+    <header class="navbar bg-dark d-flex align-items-end">
+      <div class="navbar-header">
+        <h1 id="site-brand">BRADLEY THOMPSON</h1>
+      </div>
+      <div id="mainNavbar">
+        <nav class="nav d-flex justify-content-end">
+          <a class="nav-link inactive" href="index.html">Home</a>
+          <a class="nav-link inactive" href="resume_pg.html">Resume</a>
+          <a class="nav-link active" href="#">Projects</a>
+          <a class="nav-link inactive" href="personal_pg.html">Personal</a>
+        </nav>
+      </div>
+    </header>
+
+    <div id="content" class="container-fluid">
+      <div class="row">
+        <h2>CilantroAudit</h2>
+      </div>
+      <div class="row">
         <div class="col col-lg-4">
-          <h1 id="site-brand">BRADLEY THOMPSON</h1>
+          <img
+            src="https://user-images.githubusercontent.com/18043111/69877373-e1aeed80-1276-11ea-9747-0cd049867170.gif"
+            alt="A short gif showing CilantroAudit" class="landscape" />
+          <img
+            src="https://user-images.githubusercontent.com/20716788/68810750-d5deec80-0623-11ea-835f-1ae0ddcb8894.png"
+            alt="A picture of the page seen when filling an audit out." class="landscape" />
         </div>
-        <div class="col col-lg-2"></div>
-        <div class="col col-lg-6">
-          <nav class="nav d-flex justify-content-end">
-            <a class="nav-link inactive" href="index.html">Home</a>
-            <a class="nav-link inactive" href="resume_pg.html">Resume</a>
-            <a class="nav-link active" href="#">Projects</a>
-            <a class="nav-link inactive" href="personal_pg.html">Personal</a>
-          </nav>
-        </div>
-      </header>
-      <div id="content" class="container-fluid">
-        <div class="row">
-          <h2>CilantroAudit</h2>
-        </div>
-        <div class="row">
-          <div class="col col-lg-4">
-            <img
-              src="https://user-images.githubusercontent.com/18043111/69877373-e1aeed80-1276-11ea-9747-0cd049867170.gif"
-              alt="A short gif showing CilantroAudit"
-              class="landscape"
-            />
-            <img
-              src="https://user-images.githubusercontent.com/20716788/68810750-d5deec80-0623-11ea-835f-1ae0ddcb8894.png"
-              alt="A picture of the page seen when filling an audit out."
-              class="landscape"
-            />
-          </div>
-          <div class="col col-lg-8">
-            <h5>Scope</h5>
-            <p class="focused">
-              This project was sponsored by a man named Todd, who is the manager
-              at International Paper Specialty Ink and Plate Division
-              (Beaverton, OR).
-              <b>The issue:</b> his company's auditing practices were very
-              outdated. All audits across all departments were still done in
-              paper. The focus for our project was their housekeeping
-              department, where an inability to keep track of issues via audits
-              could lead to a potentially dangerous environment.
-              <i>For example,</i> if an Automatic Electronic Defribrillator
-              (AED) was missing signage, causing it to be unfound, and someone
-              was having a medical emergency, then the missing signage could
-              very well be the difference between life and death.
-            </p>
-            <h5>Our Solution</h5>
-            <p class="focused">
-              CilantroAudit is a cross-platform application that allows admins
-              to create new audits, which users can fill out and send to the
-              database. Both admins and users can then quickly retrieve complete
-              audits from the database to view, as well export to PDF or Excel.
-              Our software also insures that multiple employees won't complete
-              the same exact audit via a lockout feature, and allowed admins to
-              track flagged-issue trends over time - making it much easier to
-              find urgent problems that need resolution. Our number-one focus
-              for UI development was ease-of-use, because the target audience
-              was a less technologically-savvy demographic.
-            </p>
-            <h5>Dev Team</h5>
-            <p class="focused">
-              In this project, I worked with a team of 8 other capstone students
-              following an agile development model. We maintained modern coding
-              practices, followed the PEP-8 Python coding standard, the builder
-              OO pattern, and implemented well-documented and well-tested code.
-              The result: a maintanable, expansible software solution.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          More of my projects to be added here at a later date...
+        <div class="col col-lg-8">
+          <h5>Scope</h5>
+          <p class="focused">
+            This project was sponsored by a man named Todd, who is the manager
+            at International Paper Specialty Ink and Plate Division
+            (Beaverton, OR).
+            <b>The issue:</b> his company's auditing practices were very
+            outdated. All audits across all departments were still done in
+            paper. The focus for our project was their housekeeping
+            department, where an inability to keep track of issues via audits
+            could lead to a potentially dangerous environment.
+            <i>For example,</i> if an Automatic Electronic Defribrillator
+            (AED) was missing signage, causing it to be unfound, and someone
+            was having a medical emergency, then the missing signage could
+            very well be the difference between life and death.
+          </p>
+          <h5>Our Solution</h5>
+          <p class="focused">
+            CilantroAudit is a cross-platform application that allows admins
+            to create new audits, which users can fill out and send to the
+            database. Both admins and users can then quickly retrieve complete
+            audits from the database to view, as well export to PDF or Excel.
+            Our software also insures that multiple employees won't complete
+            the same exact audit via a lockout feature, and allowed admins to
+            track flagged-issue trends over time - making it much easier to
+            find urgent problems that need resolution. Our number-one focus
+            for UI development was ease-of-use, because the target audience
+            was a less technologically-savvy demographic.
+          </p>
+          <h5>Dev Team</h5>
+          <p class="focused">
+            In this project, I worked with a team of 8 other capstone students
+            following an agile development model. We maintained modern coding
+            practices, followed the PEP-8 Python coding standard, the builder
+            OO pattern, and implemented well-documented and well-tested code.
+            The result: a maintanable, expansible software solution.
+          </p>
         </div>
       </div>
-      <footer></footer>
+      <div class="row">
+        More of my projects to be added here at a later date...
+      </div>
     </div>
-  </body>
+    <footer></footer>
+  </div>
+</body>
+
 </html>
