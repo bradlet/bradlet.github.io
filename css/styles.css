@@ -48,8 +48,6 @@ img {
 }
 /* For Portrait layout pictures */
 img.portrait {
-  height: 400px;
-  width: 310px;
   padding: 10px;
   margin: 10px;
   border: 3px solid black;
