@@ -2,7 +2,7 @@
 * {
   font-family: "Cabin", sans-serif;
 }
-h1#site-brand, p.focused{
+#site-brand, p.focused{
   color: white;
 }
 /* Want strong to place emphasis, 
@@ -20,9 +20,6 @@ p.focused {
 /* Link & Nav Styling */
 a {
   letter-spacing: 0.1em;
-}
-.active, .inactive {
-  margin-right: 5px;
 }
 .active {
   color: #000;
