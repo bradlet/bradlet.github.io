@@ -16,6 +16,13 @@ p.focused {
   padding: 10px;
   margin: 10px;
 }
+.greeting {
+  font-family: Courier, monospace;
+  font-size: 250%;
+}
+.greeting:first-line {
+  font-size: 170%;
+}
 
 /* Link & Nav Styling */
 a {
@@ -50,11 +57,10 @@ a {
   }
 }
 
-/* Grid Styling */
+/* Non-Template Grid Styling */
 aside {
   background-color: #f1f1d4;
-  border: 2px solid #000;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 aside > p {
   font-family: 'Tangerine', cursive;
@@ -79,4 +85,10 @@ img.portrait {
   width: 300px;
   border: 3px solid black;
   border-radius: 5px;
+}
+.bg-landscape {
+  background-image: url("../images/mounthood_bradleythompson.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 100vh;
+  height: 100vh;
 }

@@ -26,7 +26,8 @@
 <body>
   <!-- Fluid container wrapping entire body -->
   <div class="container-fluid">
-    <header class="navbar navbar-expand-md bg-dark mb-3 d-flex justify-content-between align-items-end">
+    <header class="navbar fixed-top navbar-expand-md bg-dark mb-3
+      d-flex justify-content-between align-items-end">
       <div class="navbar-header">
         <h2 id="site-brand">BRADLEY THOMPSON</h2>
       </div>
@@ -47,27 +48,30 @@
     </header>
 
     <!-- Everything inbetween the header and footer is "content" -->
-    <div id="content" class="container-fluid grid-container">
-      <aside class="aside-left">
-        <p>"Committed to their tasks."</p>
-        <p>"Relaxed and positive person."</p>
-        <p>"Willing to put the extra effort in."</p>
-      </aside>
-      <section class="main">
-        <img src="images/me.jpg" class="portrait" alt="Picture of me" />
-        <h3>INTRODUCTION</h3>
-        <p>
-          Hi, I am a computer science student at Portland State University.
-          I'll be completing my Bachelors of Science in Computer Science in
-          March 2020. Then, I will begin graduate school in pursuit of a
-          Masters in Computer Science.
+    <div id="content">
+      <div class="bg-landscape mb-3 d-flex flex-column justify-content-between">
+        <p class="greeting mx-5 my-5">
+          Hello,<br/>I am a motivated software developer who is always looking to prove my 
+          abilities, while seeking out every opportunity to learn and improve.
         </p>
-      </section>
-      <aside class="aside-right">
-        <p>"Very friendly and easy to work with."</p>
-        <p>"Go-get-em attitude."</p>
-        <b class="text-monospace blockquote">- Quotes from past team members</b>
-      </aside>
+        <i class="fas fa-arrow-alt-circle-down fa-8x align-self-center text-white mb-5"></i>
+      </div>
+      <div class="container-fluid grid-container">
+        <aside class="aside-left p-4">
+          <p>"Committed to their tasks."</p>
+          <p>"Relaxed and positive person."</p>
+          <p>"Willing to put the extra effort in."</p>
+        </aside>
+        <section class="main">
+          <img src="images/me.jpg" class="portrait" alt="Picture of me" />
+          <h3>INTRODUCTION</h3>
+        </section>
+        <aside class="aside-right p-2">
+          <p>"Very friendly and easy to work with."</p>
+          <p>"Go-get-em attitude."</p>
+          <b class="text-monospace blockquote">- Quotes from past team members</b>
+        </aside>
+      </div>
     </div>
     <footer></footer>
   </div>
