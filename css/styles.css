@@ -62,12 +62,3 @@ img.portrait {
   margin: 10px;
   border: 3px solid black;
 }
-.bg-mthood {
-  background-color: darkslategray;
-  background-image: url(images/mounthood_bradleythompson.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position-y: 45%;
-  overflow: hidden;
-  color: white;
-}
