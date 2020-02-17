@@ -44,6 +44,9 @@ a {
     right: 0;
     top: 15px;
   }
+  .nav-link {
+    letter-spacing: 0em;
+  }
 }
 /* End of Link & Nav Styling */
 
