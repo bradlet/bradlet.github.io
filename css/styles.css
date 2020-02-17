@@ -36,9 +36,10 @@ a {
   background-color: rgb(20,20,20);
   color: rgb(100,180,250);
 }
-/* When the menu button shows up on tablets and phones,
-   make sure it is tucked in the top right. */
+
 @media (max-width: 768px) {
+  /* When the menu button shows up on tablets and phones,
+    make sure it is tucked in the top right. */
   .navbar-toggler {
     position: absolute;
     right: 0;
