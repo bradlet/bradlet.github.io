@@ -1,0 +1,24 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+  grid-template-areas:
+     "aside-left main aside-right"
+}
+.aside-left, .main, .aside-right {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.aside-left, .aside-right {
+  justify-content: space-around;
+}
+.aside-left {
+  grid-area: aside-left;
+}
+.main {
+  grid-area: main;
+}
+.aside-right {
+  grid-area: aside-right;
+}
