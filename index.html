@@ -49,14 +49,17 @@
 
     <!-- Everything inbetween the header and footer is "content" -->
     <div id="content">
-      <div class="bg-landscape mb-3 d-flex flex-column justify-content-between">
-        <p class="greeting mx-5 my-5">
+      <!-- Landing Page -->
+      <div class="mb-3 d-flex flex-column justify-content-between bg-landscape">
+        <p class="greeting mx-5 my-5 px-5">
           Hello,<br/>I am a motivated software developer who is always looking to prove my 
           abilities, while seeking out every opportunity to learn and improve.
         </p>
-        <i class="fas fa-arrow-alt-circle-down fa-8x align-self-center text-white mb-5"></i>
+        <a class="align-self-center" href="#aboutme">
+          <i class="fas fa-arrow-alt-circle-down fa-8x mb-5 pulse"></i>
+        </a>
       </div>
-      <div class="container-fluid grid-container">
+      <div class="container-fluid grid-container" id="aboutme">
         <aside class="aside-left p-4">
           <p>"Committed to their tasks."</p>
           <p>"Relaxed and positive person."</p>

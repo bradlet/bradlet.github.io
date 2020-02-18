@@ -2,8 +2,8 @@
 * {
   font-family: "Cabin", sans-serif;
 }
-#site-brand, p.focused{
-  color: white;
+#site-brand, p.focused, .greeting:first-line, .pulse {
+  color: #ffffff;
 }
 /* Want strong to place emphasis, 
    but not completely alter text's appearance */
@@ -22,6 +22,24 @@ p.focused {
 }
 .greeting:first-line {
   font-size: 170%;
+}
+/* Animation for down arrow */
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes pulse {
+  from {
+    color: #ffffff;
+    transform: translateY(0%);
+  }
+  to {
+    color: yellowgreen;
+    transform: translateY(25%);
+  }
 }
 
 /* Link & Nav Styling */
@@ -86,9 +104,17 @@ img.portrait {
   border: 3px solid black;
   border-radius: 5px;
 }
+/* Made so that it acts like a background image,
+   but probably easier to make responsive */
 .bg-landscape {
-  background-image: url("../images/mounthood_bradleythompson.jpg");
+  background-image: url(../images/mounthood_bradleythompson.jpg);
   background-repeat: no-repeat;
+  background-position-x: 50%;
   background-size: auto 100vh;
   height: 100vh;
+}
+@media (max-width: 768px) {
+  .bg-landscape {
+    background-size: 768px 0px;
+  }
 }
