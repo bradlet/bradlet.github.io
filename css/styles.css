@@ -2,7 +2,7 @@
 * {
   font-family: "Cabin", sans-serif;
 }
-#site-brand, p.focused, .greeting:first-line, .pulse {
+#site-brand, p.focused, .greeting, .pulse {
   color: #ffffff;
 }
 /* Want strong to place emphasis, 
@@ -18,7 +18,7 @@ p.focused {
 }
 .greeting {
   font-family: Courier, monospace;
-  font-size: 250%;
+  font-size: 2.5vw;
 }
 .greeting:first-line {
   font-size: 170%;
@@ -30,6 +30,8 @@ p.focused {
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+  margin-top: 1em;
+  font-size: 9vw;
 }
 @keyframes pulse {
   from {
@@ -110,11 +112,6 @@ img.portrait {
   background-image: url(../images/mounthood_bradleythompson.jpg);
   background-repeat: no-repeat;
   background-position-x: 50%;
-  background-size: auto 100vh;
-  height: 100vh;
-}
-@media (max-width: 768px) {
-  .bg-landscape {
-    background-size: 768px 0px;
-  }
+  background-size: 100vw auto;
+  height: auto;
 }
