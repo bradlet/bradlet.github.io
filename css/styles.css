@@ -2,7 +2,7 @@
 * {
   font-family: "Cabin", sans-serif;
 }
-#site-brand, .focused, .greeting, .pulse, .main {
+#site-brand, .focused, .pulse, .greeting:first-line, .main {
   color: #ffffff;
 }
 /* Want strong to place emphasis, 
@@ -18,15 +18,18 @@ strong {
 }
 .greeting {
   font-family: Courier, monospace;
+  width: 80%;
+  padding: 10px;
   font-size: 2.5vw;
+  font-weight: 900;
 }
 .greeting:first-line {
   font-size: 170%;
 }
-@media (max-width: 768px){
+@media (max-width: 992px){
   .greeting {
-    background-color: rgba(20,20,20,.2);
-    border-radius: 5px;
+    font-size: 24px;
+    margin-bottom: 0px;
   }
 }
 /* Animation for down arrow */
@@ -37,7 +40,7 @@ strong {
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   margin-top: 1em;
-  font-size: 9vw;
+  font-size: 120px;
 }
 @keyframes pulse {
   from {
@@ -118,7 +121,7 @@ img.portrait {
   background-image: url(../images/mounthood_bradleythompson.jpg);
   background-repeat: no-repeat;
   background-position-x: 50%;
-  background-size: 100vw auto;
+  background-size: auto 100vh;
   padding-top: 50px;
-  height: auto;
+  height: 100vh;
 }
