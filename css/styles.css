@@ -2,7 +2,7 @@
 * {
   font-family: "Cabin", sans-serif;
 }
-#site-brand, p.focused, .greeting, .pulse {
+#site-brand, .focused, .greeting, .pulse, .main {
   color: #ffffff;
 }
 /* Want strong to place emphasis, 
@@ -10,8 +10,8 @@
 strong {
   color: inherit;
 }
-p.focused {
-  background-color: rgba(20, 20, 20, 0.7);
+.focused {
+  background-color: rgba(20, 20, 20, 0.75);
   border-radius: 7px;
   padding: 10px;
   margin: 10px;
@@ -22,6 +22,12 @@ p.focused {
 }
 .greeting:first-line {
   font-size: 170%;
+}
+@media (max-width: 768px){
+  .greeting {
+    background-color: rgba(20,20,20,.2);
+    border-radius: 5px;
+  }
 }
 /* Animation for down arrow */
 .pulse {
@@ -88,8 +94,8 @@ aside > p {
   border-bottom: 2px solid #9c0e0e;
 }
 .main {
-  background-color: #f5f3f4;
   padding: 20px;
+  background-image: linear-gradient(#ffffff,80%, #0b5070);
 }
 
 /* IMG styling */
@@ -113,5 +119,6 @@ img.portrait {
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-size: 100vw auto;
+  padding-top: 50px;
   height: auto;
 }

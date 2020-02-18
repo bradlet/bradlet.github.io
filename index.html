@@ -50,24 +50,25 @@
     <!-- Everything inbetween the header and footer is "content" -->
     <div id="content">
       <!-- Landing Page -->
-      <div class="mb-3 d-flex flex-column bg-landscape">
-        <p class="greeting my-5 px-5">
-          Hello,<br/>I am a motivated software developer who is always looking to prove my 
+      <div class="d-flex flex-column bg-landscape">
+        <p class="greeting mt-2 px-5">
+          Hello,<br />I am a motivated software developer who is always looking to prove my
           abilities, while seeking out every opportunity to learn and improve.
         </p>
-        <a class="align-self-center" href="#aboutme">
+        <a class="align-self-center" href="#pagedown">
           <i class="fas fa-arrow-alt-circle-down mb-5 pulse"></i>
         </a>
       </div>
-      <div class="container-fluid grid-container" id="aboutme">
+      <div class="bar-separator" id="pagedown"></div>
+      <!-- Intro portrait and quotes -->
+      <div class="container-fluid grid-container mb-3">
         <aside class="aside-left p-4">
           <p>"Committed to their tasks."</p>
           <p>"Relaxed and positive person."</p>
           <p>"Willing to put the extra effort in."</p>
         </aside>
-        <section class="main">
+        <section class="main align-self-center">
           <img src="images/me.jpg" class="portrait" alt="Picture of me" />
-          <h3>INTRODUCTION</h3>
         </section>
         <aside class="aside-right p-2">
           <p>"Very friendly and easy to work with."</p>
@@ -75,8 +76,56 @@
           <b class="text-monospace blockquote">- Quotes from past team members</b>
         </aside>
       </div>
+      <!-- Verbose section of home page -->
+      <div class="p-5 focused">
+        <p>
+          <h3>Introduction</h3>
+          I am interested in, essentially, every branch of computer science. The more topics I encounter,
+          <b>the more I want to learn</b>. In fact, this is the cause of one of my only
+          <span class="badge badge-danger text-dark">obstacles</span>: I want to learn
+          so many things that I struggle to focus on just one for too long. My
+          <span class="badge badge-success text-light">saving grace</span> in this regard
+          is the fact that, given a role or task, I have an easy time overcoming my urge to study with breadth,
+          and can focus in on the task at hand.
+          <br /><br />
+          <h3>Technical Ability</h3>
+          I have taken a wide range of courses in undergrad that have laid a strong foundation in many areas:
+          <ul>
+            <li>CS 441 - Artificial Intelligence</li>
+            <li>CS 415P - Parallel Programming</li>
+            <li>CS 465P - Full-Stack Web Development</li>
+            <li>CS 461P - Open Source Software Development</li>
+            <li>CS 420P - Object Oriented Programming</li>
+            <li>CS 486 - Intro to Database Management Systems</li>
+            <li>CS 410 - Advanced Linux Systems Programming</li>
+            <li>CS 320 - Principles of Programming Languages</li>
+            <li>CS 350 - Algorithms & Complexity</li>
+          </ul>
+          These courses have established a strong functional foundation in advanced algorithms, full-stack application
+          development, systems programming, object-oriented design and implementation, database management (both
+          relational
+          and non-relational), the software development lifecycle, and more.
+          <br />
+          In <span class="badge badge-info">Grad School</span>, I'll specialize in Artificial Intelligence and Machine
+          Learning, while also furthering my education
+          in concepts such as: language theory and design, compilers, security, functional programming, etc.
+          <br /> <br />
+          <h5>Self-Study</h5>
+          I already push myself to constantly learn on my own time. I am currently reading up on:
+          <ul class="py-0 my-0">
+            <li>Computer Security, and</li>
+            <li>Networking Protocols</li>
+          </ul>
+          I am following grad-level course catalogs to help direct my focus while studying these concepts.
+        </p>
+      </div>
     </div>
-    <footer></footer>
+
+    <footer class="row bg-dark">
+      <a href="#" class="nav-link inactive">
+        <strong>Click here</strong> to return to the top of the page!
+      </a>
+    </footer>
   </div>
 
   <!-- Bootstrap Scripts -->

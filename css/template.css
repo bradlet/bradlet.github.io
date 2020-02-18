@@ -5,6 +5,15 @@
   grid-template-areas:
      "aside-left main aside-right"
 }
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+      "main main"
+      "aside-left aside-right"
+  }
+}
 .aside-left, .main, .aside-right {
   display: flex;
   flex-flow: column nowrap;
@@ -21,4 +30,11 @@
 }
 .aside-right {
   grid-area: aside-right;
+}
+.bar-separator {
+  width: 100%;
+  height: 20px;
+  background-color: #000;
+  border-radius: 5px;
+  margin: 10px 0 10px 0;
 }
