@@ -14,6 +14,28 @@
       "aside-left aside-right"
   }
 }
+
+.personal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: space-around;
+  justify-items: stretch;
+  align-items: center;
+  gap: 20px;
+  margin: 20px auto;
+}
+@media (max-width: 1120px) {
+  .personal-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 750px) {
+  .personal-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .aside-left, .main, .aside-right {
   display: flex;
   flex-flow: column nowrap;
