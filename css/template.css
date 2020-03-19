@@ -18,7 +18,6 @@
 .personal-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
   justify-content: space-around;
   justify-items: stretch;
   align-items: center;
