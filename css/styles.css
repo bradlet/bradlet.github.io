@@ -11,7 +11,7 @@ strong {
   color: inherit;
 }
 .focused {
-  background-color: rgba(20, 20, 20, 0.75);
+  background-color: rgba(20, 20, 20, 0.80);
   border-radius: 7px;
   padding: 10px;
   margin: 10px;
@@ -100,10 +100,25 @@ aside > p {
   padding: 20px;
   background-image: linear-gradient(#ffffff,80%, #0b5070);
 }
+.grid-item {
+  font-size: 200%;
+}
+@media (min-width: 1120px) {
+  .grid-item-wide {
+    grid-column: span 2;
+  }
+}
+.grid-box {
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+.grid-circle {
+  border-radius: 50%;
+}
 
 /* IMG styling */
 /* so images will match their parent element width */
-img.landscape {
+img {
   width: 100%;
 }
 /* For Portrait layout pictures */
@@ -115,8 +130,6 @@ img.portrait {
   border: 3px solid black;
   border-radius: 5px;
 }
-/* Made so that it acts like a background image,
-   but probably easier to make responsive */
 .bg-landscape {
   background-image: url(../images/mounthood_bradleythompson.jpg);
   background-repeat: no-repeat;
