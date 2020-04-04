@@ -1,146 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+---
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-  <link rel="stylesheet" href="css/styles.css" type="text/css" />
-  <link rel="stylesheet" href="css/template.css" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Cabin|Teko:700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Tangerine:700&display=swap" rel="stylesheet">
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.
-        min.js"></script>
-
-  <!-- Font Awesome -->
-  <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-
-  <title>Bradley Thompson's E-Portfolio</title>
-</head>
-
-<body>
-  <!-- Fluid container wrapping entire body -->
-  <div class="container-fluid">
-    <header class="navbar fixed-top navbar-expand-md bg-dark mb-3
-      d-flex justify-content-between align-items-end">
-      <div class="navbar-header">
-        <h2 id="site-brand">BRADLEY THOMPSON</h2>
-      </div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="text-white"><i class="fas fa-bars"></i></span>
-      </button>
-      <div>
-        <div class="collapse navbar-collapse">
-          <nav class="nav">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link inactive" href="resume_pg.html">Resume</a>
-            <a class="nav-link inactive" href="projects_pg.html">Projects</a>
-            <a class="nav-link inactive" href="personal_pg.html">Personal</a>
-          </nav>
+<div class="container-fluid" id="main">
+  <div class="jumbotron jumbotron-fluid shadow">
+    <div class="mx-5">
+      <h1 class="display-2">Hello, I'm Bradley Thompson</h1>
+      <p class="lead text-right">
+        and if you're looking for a
+        <strong>diversely skilled, passionate software developer</strong>, 
+        then look no further.
+      </p>
+    </div>
+  </div>
+  <div class="row py-4">
+    <div class="col-lg-4 offset-lg-4">
+      <div class="card">
+        <img
+          class="card-img-top"
+          src="assets/images/Me.jpg"
+          alt="Picture of me"
+        />
+        <div class="card-body">
+          <h3 class="card-title">A core player to any team</h3>
+          <p>
+            I'm relentlessly determined to improve all the time. I want to help those around me
+            succeed just as much as myself. My ability to self-teach and communicate makes me an
+            adaptible component to any team.
+          </p>
         </div>
       </div>
-    </header>
-
-    <!-- Everything inbetween the header and footer is "content" -->
-    <div id="content" class="mt-5">
-      <!-- Landing Page -->
-      <div class="d-flex flex-column justify-content-start justify-content-md-around bg-landscape">
-        <p class="greeting align-self-center pt-5">
-          Hello,<br />I am a motivated software developer who is always looking to prove my
-          abilities, while seeking out every opportunity to learn and improve.
-        </p>
-        <a class="align-self-center" href="#pagedown">
-          <i class="fas fa-arrow-alt-circle-down mb-5 pulse"></i>
-        </a>
-      </div>
-      <div class="bar-separator" id="pagedown"></div>
-      <!-- Intro portrait and quotes -->
-      <div class="container-fluid grid-container mb-3">
-        <aside class="aside-left p-4">
-          <p>"Committed to their tasks."</p>
-          <p>"Relaxed and positive person."</p>
-          <p>"Willing to put the extra effort in."</p>
-        </aside>
-        <section class="main align-self-center">
-          <img src="images/me.jpg" class="portrait" alt="Picture of me" />
-        </section>
-        <aside class="aside-right p-2">
-          <p>"Very friendly and easy to work with."</p>
-          <p>"Go-get-em attitude."</p>
-          <b class="text-monospace blockquote">- Quotes from past team members</b>
-        </aside>
-      </div>
-      <!-- Verbose section of home page -->
-      <div class="p-5 focused">
-        <h3>Introduction</h3>
-        <p class="focused">
-          I am interested in, essentially, every branch of computer science. The more topics I encounter,
-          <b>the more I want to learn</b>. In fact, this is the cause of one of my only
-          <span class="badge badge-danger text-dark">obstacles</span>: I want to learn
-          so many things that I struggle to focus on just one for too long. My
-          <span class="badge badge-success text-light">saving grace</span> in this regard
-          is the fact that, given a role or task, I have an easy time overcoming my urge to study with breadth,
-          and can focus in on the task at hand.
-        </p>
-        <h3>Technical Ability</h3>
-        <section class="focused">
-          I have taken a wide range of courses in undergrad that have laid a strong foundation in many areas:
-          <ul>
-            <li>CS 441 - Artificial Intelligence</li>
-            <li>CS 415P - Parallel Programming</li>
-            <li>CS 465P - Full-Stack Web Development</li>
-            <li>CS 461P - Open Source Software Development</li>
-            <li>CS 420P - Object Oriented Programming</li>
-            <li>CS 486 - Intro to Database Management Systems</li>
-            <li>CS 410 - Advanced Linux Systems Programming</li>
-            <li>CS 320 - Principles of Programming Languages</li>
-            <li>CS 350 - Algorithms & Complexity</li>
+    </div>
+  </div>
+  <div class="card-deck row bg-secondary">
+    <div class="col-lg-4 py-4 offset-lg-2">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Current Coursework</h4>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">CS591 - Intro to Computer Security</li>
+            <li class="list-group-item">CS584 - Algorithm Design and Analysis</li>
+            <li class="list-group-item">CS545 - Machine Learning</li>
           </ul>
-          These courses have established a strong functional foundation in advanced algorithms, full-stack application
-          development, systems programming, object-oriented design and implementation, database management (both
-          relational
-          and non-relational), the software development lifecycle, and more.
-          <br />
-          In <span class="badge badge-info">Grad School</span>, I'll specialize in Artificial Intelligence and Machine
-          Learning, while also furthering my education
-          in concepts such as: language theory and design, compilers, security, functional programming, etc.
-        </section>
-        <h5>Self-Study</h5>
-        <section class="focused">
-          I already push myself to constantly learn on my own time. I am currently reading up on:
-          <ul class="py-0 my-0">
-            <li>Computer Security, and</li>
-            <li>Networking Protocols</li>
-          </ul>
-          I am following grad-level course catalogs to help direct my focus while studying these concepts.
-        </section>
+        </div>
+        <div class="card-footer">
+          <p>
+            I'm also studying TCP/IP protocol on my own, outside of my coursework.
+          </p>
+        </div>
       </div>
     </div>
-
-    <footer class="row bg-dark">
-      <a href="#" class="nav-link inactive">
-        <strong>Click here</strong> to return to the top of the page!
-      </a>
-    </footer>
+    <div class="col-lg-4 py-4">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Noteworthy Coursework</h2>
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">CS441 - Artificial Intelligence</li>
+            <li class="list-group-item">CS415P - Parallel Programming</li>
+            <li class="list-group-item">CS465P - Full-Stack Web Development</li>
+            <li class="list-group-item">CS410 - Advanced Linux Systems Programming</li>
+            <li class="list-group-item">CS461P - Open Source Software Development</li>
+            <li class="list-group-item">CS420P - Object Oriented Programming</li>
+            <li class="list-group-item">CS486 - Intro to Database Management Systems</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <!-- Bootstrap Scripts -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-
-</body>
-
-</html>
+</div>

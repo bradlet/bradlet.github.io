@@ -1,0 +1,61 @@
+<div id="header" class="navbar navbar-light navbar-expand-lg sticky-top bg-white shadow">
+  <h2>Bradley's Web Portfolio</h2>
+
+  <!-- Navigation -->
+  <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+    <div class="dropdown">
+      <button
+        class="btn p-0 m-0"
+        type="button"
+        id="contactDropdown"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        <div class="contact d-flex align-items-center">
+          <i class="fas fa-phone-square-alt fa-2x pr-2"></i>
+          <h5 class="pr-3 pt-2">Contact Me</h5>
+        </div>
+      </button>
+      <div class="dropdown-menu dropdown-menu-right">
+        <span class="dropdown-item-text d-flex justify-content-between">
+          <i class="far fa-envelope fa-lg pt-1"></i> bradlet2@pdx.edu
+        </span>
+        <span class="dropdown-item-text d-flex justify-content-between">
+          <i class="fas fa-mobile-alt fa-lg pl-1 pt-1"></i> (971)-732-6272
+        </span>
+        <span class="dropdown-item-text d-flex justify-content-between">
+          <i class="fab fa-github fa-lg"></i>
+          <a href="https://github.com/bradlet"> My Github </a>
+        </span>
+        <span class="dropdown-item-text d-flex flex-nowrap justify-content-between">
+          <i class="fab fa-linkedin fa-lg"></i>
+          <a href="https://www.linkedin.com/in/thompson-bradley/"> My LinkedIn </a>
+        </span>
+      </div>
+    </div>
+    <nav class="nav navbar-nav">
+      <!-- Make a nav-item for each page, if this is the page being viewed add text-primary class-->
+      {% for item in site.data.nav %}
+      <a
+        href="{{ item.link }}"
+        class="nav-link {% if page.url == item.link %}text-primary{% endif %}"
+      >
+        {{ item.name }}
+      </a>
+      {% endfor %}
+    </nav>
+  </div>
+  <!-- Navigation Collapse Toggle -->
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#mainNavbar"
+    aria-controls="mainNavbar"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</div>
