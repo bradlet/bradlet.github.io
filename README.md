@@ -23,9 +23,9 @@ Output goes to `dist/`.
 
 ## Deployment
 
-Pushes to `master` automatically deploy via GitHub Actions.
+Pushes to `main` automatically deploy via GitHub Actions.
 
-The site is served at [bradlet.com](https://bradlet.com) via a CNAME record pointing to `bradlet.github.io`.
+The site is served at [bradlet.com](https://www.bradlet.com) via a CNAME record pointing to `bradlet.github.io`.
 
 ### GitHub Pages Setup
 
