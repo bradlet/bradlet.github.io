@@ -12,7 +12,7 @@ export default function Nav() {
     <nav className={styles.nav}>
       <div className={styles.inner}>
         <NavLink to="/" className={styles.logo}>
-          bt<span className={styles.logoDot}>.</span>
+          bradlet<span className={styles.logoDot}>.</span>
         </NavLink>
         <ul className={styles.links}>
           {links.map((link) => (
