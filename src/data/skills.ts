@@ -7,17 +7,18 @@ export const skills: SkillCategory[] = [
   {
     category: "Cloud",
     items: [
-      "AWS (EKS, MSK, RDS, VPC, S3, IAM)",
-      "GCP (GKE, AlloyDB, Cloud SQL, Pub/Sub, Dataflow, Cloud Run, Cloud Storage, IAM)",
+      "AWS (EKS, MSK, RDS, VPC, IAM)",
+      "GCP (GKE, AlloyDB, Cloud Run, Pub/Sub, Dataflow, GAR, IAM)",
     ],
   },
   {
-    category: "Infrastructure & DevOps",
+    category: "Infrastructure & IaC",
     items: [
-      "Terraform",
       "Kubernetes",
+      "Terraform",
+      "Helm",
+      "Kustomize",
       "Docker",
-      "Terraform CDK",
       "Pulumi",
       "GitHub Actions",
       "GitLab CI/CD",
@@ -25,22 +26,26 @@ export const skills: SkillCategory[] = [
   },
   {
     category: "Databases",
-    items: ["PostgreSQL", "Firestore", "Redis"],
+    items: ["PostgreSQL (AlloyDB, RDS Aurora, Cloud SQL)", "Firestore", "Redis"],
   },
   {
     category: "Languages",
-    items: ["Kotlin", "Go", "Python", "TypeScript", "HCL"],
+    items: ["Go", "Kotlin", "Python", "TypeScript", "HCL", "Rust"],
   },
   {
     category: "Observability",
-    items: ["OpenTelemetry", "Prometheus", "Grafana", "DataDog"],
+    items: ["OpenTelemetry", "Prometheus", "Grafana", "Datadog"],
   },
   {
-    category: "AI Tooling",
-    items: ["Cursor", "Claude Code", "Copilot"],
+    category: "Networking & Service Mesh",
+    items: ["Istio", "Envoy", "gRPC"],
+  },
+  {
+    category: "Security & Compliance",
+    items: ["SOC2", "Workload Identity Federation", "HashiCorp Vault"],
   },
   {
     category: "Other",
-    items: ["Security & Compliance (SOC2)", "Mentorship & Hiring"],
+    items: ["Agentic & Context Engineering", "Mentorship & Hiring"],
   },
 ];

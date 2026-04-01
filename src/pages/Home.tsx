@@ -16,22 +16,15 @@ export default function Home() {
         <p className={styles.greeting}>Bradley Thompson</p>
         <h1 className={styles.title}>Senior Platform Engineer</h1>
         <p className={styles.summary}>
-          I specialize in cloud infrastructure and developer platforms. I've led
-          multi-terabyte database migrations, architected internal deployment
-          systems that multiplied release velocity, and scaled
-          Kubernetes/serverless workloads handling tens of thousands of
-          requests per second.
+          I build developer platforms and scale cloud infrastructure across AWS
+          and GCP. I've led multi-terabyte database migrations, architected
+          internal deployment and provisioning systems that increased release
+          velocity 5x, and scaled Kubernetes workloads supporting financial
+          systems processing $700M+ in daily transactions.
         </p>
         <p className={styles.current}>
-          Currently at{" "}
-          <a
-            href="https://flexa.co"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Flexa
-          </a>
-          . Previously at Glide, Tradewell, Bumped, and eBay.
+          Open to new opportunities. Previously at Flexa, Glide, Tradewell,
+          Bumped, and eBay.
         </p>
       </header>
 
