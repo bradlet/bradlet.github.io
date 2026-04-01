@@ -36,9 +36,8 @@ export const projects: Project[] = [
       "A Go CLI for personal finance tracking — specifically cost basis calculation for crypto and other assets. Syncs transaction data from Google Sheets into a local SQLite database, calculates gains/losses, and writes results back to the sheet.",
     techStack: [
       "Go (Cobra + Viper)",
-      "SQLite (modernc.org/sqlite — pure Go, no CGO)",
+      "SQLite",
       "Google Sheets API",
-      "shopspring/decimal for monetary precision",
     ],
     features: [
       "Pull transaction data from Google Sheets into a local SQLite database",

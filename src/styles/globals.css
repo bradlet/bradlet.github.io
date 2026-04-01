@@ -16,6 +16,7 @@
   --font-mono: 'JetBrains Mono', 'SF Mono', 'Fira Code', monospace;
 
   --max-width: 720px;
+  --max-width-wide: 1080px;
   --nav-height: 64px;
   --spacing-xs: 4px;
   --spacing-sm: 8px;

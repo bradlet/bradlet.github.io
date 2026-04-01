@@ -29,3 +29,15 @@ This is a personal portfolio site for Bradley Thompson — a React 19 + TypeScri
 **Node version:** CI uses Node 20 — match locally for parity.
 
 **Deployment:** Pushing to `main` triggers `.github/workflows/deploy.yml`, which runs `npm ci && npm run build`, copies `CNAME` into `dist/`, and deploys to GitHub Pages.
+
+## Feature Flags
+
+Lightweight, dumb feature flagging is configured in `src/config/features.ts`. Toggle boolean flags to enable/disable features without redeployment:
+
+```typescript
+export const features = {
+  blog: false,  // Set to true to enable blog routes locally
+};
+```
+
+To test a feature locally, change the flag to `true` and Vite will hot-reload. Commit with the flag set to `false` to keep the feature disabled on the live site.

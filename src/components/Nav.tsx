@@ -1,11 +1,16 @@
 import { NavLink } from "react-router-dom";
+import { features } from "../config/features";
 import styles from "./Nav.module.css";
 
-const links = [
+const baseLinks = [
   { to: "/", label: "Home" },
   { to: "/experience", label: "Experience" },
   { to: "/projects", label: "Projects" },
 ];
+
+const links = features.blog
+  ? [...baseLinks, { to: "/blog", label: "Blog" }]
+  : baseLinks;
 
 export default function Nav() {
   return (
