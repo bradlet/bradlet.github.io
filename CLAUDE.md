@@ -23,6 +23,7 @@ This is a personal portfolio site for Bradley Thompson — a React 19 + TypeScri
 - `src/data/experience.ts` — work history (`ExperienceEntry[]`) and education (`EducationEntry[]`)
 - `src/data/skills.ts` — skill categories (`SkillCategory[]`)
 - `src/data/projects.ts` — project showcase (`Project[]`)
+- `src/content/blog` - simply add markdown files to create new blog posts (`BlogPostData` and `BlogPostMeta` derived).
 
 **Styling:** CSS Modules per component/page, plus `src/styles/globals.css` for CSS custom properties (design tokens). All spacing, colors, and typography are defined as CSS variables in `src/styles/globals.css` — use those instead of hardcoding values (e.g. `var(--color-accent)`, `var(--spacing-md)`). Fonts: DM Sans (body) and JetBrains Mono (mono).
 
