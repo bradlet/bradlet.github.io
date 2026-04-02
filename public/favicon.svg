@@ -1,0 +1,26 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="64" height="64" fill="#ffffff"/>
+
+  <!-- Shadow text: bt. -->
+  <text
+    x="14"
+    y="50"
+    font-family="Courier New, monospace"
+    font-size="40"
+    font-weight="bold"
+    text-anchor="start"
+    fill="#d1d5db"
+  >bt.</text>
+
+  <!-- Main text: bt. -->
+  <text
+    x="8"
+    y="44"
+    font-family="Courier New, monospace"
+    font-size="40"
+    font-weight="bold"
+    text-anchor="start"
+    fill="#1f2937"
+  >bt.</text>
+</svg>
