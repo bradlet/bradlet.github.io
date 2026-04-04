@@ -20,10 +20,9 @@ This is a personal portfolio site for Bradley Thompson — a React 19 + TypeScri
 **Routing:** Uses `HashRouter` (required for GitHub Pages static hosting — no server-side routing). Three routes: `/`, `/experience`, `/projects`, all wrapped in a shared `Layout`.
 
 **Data layer:** All content lives in `src/data/` as typed TypeScript constants — no API calls, no CMS. To update resume content, edit these files:
-- `src/data/experience.ts` — work history (`ExperienceEntry[]`) and education (`EducationEntry[]`)
-- `src/data/skills.ts` — skill categories (`SkillCategory[]`)
 - `src/data/projects.ts` — project showcase (`Project[]`)
 - `src/content/blog` - simply add markdown files to create new blog posts (`BlogPostData` and `BlogPostMeta` derived).
+- `src/content/resume.md` - pure markdown resume rendered as HTML in the website
 
 **Styling:** CSS Modules per component/page, plus `src/styles/globals.css` for CSS custom properties (design tokens). All spacing, colors, and typography are defined as CSS variables in `src/styles/globals.css` — use those instead of hardcoding values (e.g. `var(--color-accent)`, `var(--spacing-md)`). Fonts: DM Sans (body) and JetBrains Mono (mono).
 
