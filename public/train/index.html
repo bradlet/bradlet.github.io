@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Train: an opinionated iOS app for planning and tracking hybrid training: running and strength, side by side." />
+    <link rel="icon" type="image/png" href="/train/app-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" />
+    <title>Train</title>
+    <style>
+      :root {
+        --color-bg: #fafaf9;
+        --color-surface: #ffffff;
+        --color-text: #1c1917;
+        --color-text-secondary: #57534e;
+        --color-text-muted: #a8a29e;
+        --color-accent: #2563eb;
+        --color-accent-hover: #1d4ed8;
+        --color-border: #e7e5e4;
+        --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        --max-width: 720px;
+        --spacing-sm: 8px;
+        --spacing-md: 16px;
+        --spacing-lg: 24px;
+        --spacing-xl: 40px;
+        --spacing-2xl: 64px;
+      }
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: var(--font-body);
+        color: var(--color-text);
+        background-color: var(--color-bg);
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+      }
+      main { max-width: var(--max-width); margin: 0 auto; padding: var(--spacing-2xl) var(--spacing-md); }
+      a { color: var(--color-accent); text-decoration: none; }
+      a:hover { color: var(--color-accent-hover); }
+      header { display: flex; align-items: center; gap: var(--spacing-lg); margin-bottom: var(--spacing-xl); }
+      header img { width: 96px; height: 96px; border-radius: 22px; border: 1px solid var(--color-border); background: var(--color-surface); flex-shrink: 0; }
+      h1 { font-size: 2.25rem; line-height: 1.2; }
+      .tagline { color: var(--color-text-secondary); }
+      h2 { font-size: 1.125rem; margin: var(--spacing-xl) 0 var(--spacing-sm); }
+      p + p, p + ul, ul + p { margin-top: var(--spacing-md); }
+      ul { padding-left: var(--spacing-lg); }
+      li + li { margin-top: var(--spacing-sm); }
+      footer { margin-top: var(--spacing-2xl); padding-top: var(--spacing-lg); border-top: 1px solid var(--color-border); color: var(--color-text-muted); font-size: 0.875rem; }
+      footer a { margin-right: var(--spacing-lg); }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="/train/app-icon.png" alt="Train app icon: a running shoe above a dumbbell" />
+        <div>
+          <h1>Train</h1>
+          <p class="tagline">Run and lift, side by side, for the long haul.</p>
+        </div>
+      </header>
+
+      <p>
+        Train is an iOS app for planning, scheduling and tracking hybrid training: aerobic work
+        <em>and</em> strength. It's built on one belief: consistent training in both keeps athletes of every
+        level healthier, less injury-prone and performing better much later in life.
+      </p>
+
+      <h2>What it does</h2>
+      <ul>
+        <li><strong>Plan your cardio.</strong> Schedule runs and other aerobic sessions on a weekly calendar, including recurring plans.</li>
+        <li><strong>Plan your strength.</strong> Lay out lifts on a weekly board and log each session quickly.</li>
+        <li><strong>Track progress.</strong> Review your history, mileage and how each session felt.</li>
+        <li><strong>On-device AI coach.</strong> Ask about your training by typing or speaking. The model runs entirely on your iPhone.</li>
+        <li><strong>Your data, your way.</strong> Import workouts from Apple Health or CSV, export to CSV, and optionally keep a copy in a Google Sheet.</li>
+      </ul>
+
+      <h2>Privacy</h2>
+      <p>
+        Your training data lives on your device. Train has no accounts, ads or analytics, and its developer runs
+        no servers that receive your data. Read the full <a href="/train/privacy/">privacy policy</a>.
+      </p>
+
+      <footer>
+        <a href="/train/privacy/">Privacy policy</a>
+        <span>Made by Bradley Thompson</span>
+      </footer>
+    </main>
+  </body>
+</html>

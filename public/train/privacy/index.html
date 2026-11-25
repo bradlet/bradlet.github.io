@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Privacy policy for the Train iOS app." />
+    <link rel="icon" type="image/png" href="/train/app-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" />
+    <title>Train Privacy Policy</title>
+    <style>
+      :root {
+        --color-bg: #fafaf9;
+        --color-bg-alt: #f5f5f4;
+        --color-text: #1c1917;
+        --color-text-secondary: #57534e;
+        --color-text-muted: #a8a29e;
+        --color-accent: #2563eb;
+        --color-accent-hover: #1d4ed8;
+        --color-border: #e7e5e4;
+        --font-body: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        --max-width: 720px;
+        --spacing-sm: 8px;
+        --spacing-md: 16px;
+        --spacing-lg: 24px;
+        --spacing-xl: 40px;
+        --spacing-2xl: 64px;
+      }
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: var(--font-body);
+        color: var(--color-text);
+        background-color: var(--color-bg);
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+      }
+      main { max-width: var(--max-width); margin: 0 auto; padding: var(--spacing-2xl) var(--spacing-md); }
+      a { color: var(--color-accent); text-decoration: none; overflow-wrap: anywhere; }
+      a:hover { color: var(--color-accent-hover); }
+      .back { font-size: 0.875rem; }
+      h1 { font-size: 2rem; line-height: 1.25; margin-top: var(--spacing-md); }
+      .updated { color: var(--color-text-muted); font-size: 0.875rem; }
+      h2 { font-size: 1.125rem; margin: var(--spacing-xl) 0 var(--spacing-sm); }
+      p + p, p + ul, ul + p { margin-top: var(--spacing-md); }
+      ul { padding-left: var(--spacing-lg); }
+      li + li { margin-top: var(--spacing-sm); }
+      .summary { background: var(--color-bg-alt); border: 1px solid var(--color-border); border-radius: 12px; padding: var(--spacing-lg); margin-top: var(--spacing-lg); }
+      code { font-size: 0.9em; overflow-wrap: anywhere; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a class="back" href="/train/">← Train</a>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Effective November 25, 2026</p>
+
+      <div class="summary">
+        <p>
+          <strong>In short:</strong> Train keeps your training data on your device. It has no accounts, ads,
+          analytics or tracking, and its developer runs no servers that receive your data. Data leaves your
+          device only when you use a feature that needs it, as described below.
+        </p>
+      </div>
+
+      <h2>Data stored on your device</h2>
+      <p>
+        Your planned and recorded workouts, strength plans and lift records, notes, how-you-felt and
+        perceived-exertion ratings, and app preferences are stored locally on your iPhone. Train does not
+        currently sync this data to iCloud or any other cloud service. If that changes, this policy will be
+        updated first.
+      </p>
+
+      <h2>Apple Health</h2>
+      <p>
+        If you choose to import from Apple Health, Train asks for read-only access to your workouts and copies
+        the workouts you select into the app on your device. Train never writes to Apple Health. Health data is
+        not shared with anyone and is never used for advertising or marketing.
+      </p>
+
+      <h2>Microphone and speech recognition</h2>
+      <p>
+        If you dictate a message to the AI coach, Train uses the microphone and Apple's speech recognition to
+        turn your speech into text. Where your device supports it, recognition happens entirely on-device.
+        Otherwise, Apple processes the audio under
+        <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. Train does not record or store
+        your audio.
+      </p>
+
+      <h2>AI coach</h2>
+      <p>
+        The AI coach runs entirely on your iPhone. Your conversations and training data are never sent off the
+        device. The language model is downloaded once from <a href="https://huggingface.co/">Hugging Face</a>, and
+        only after you tap to start the download. That is an ordinary file download: Hugging Face receives the
+        standard request details (such as your IP address), but none of your training data.
+      </p>
+
+      <h2>Google Sheets sync (optional)</h2>
+      <p>
+        Sheets sync is off by default. If you turn it on, you sign in with Google and Train requests:
+      </p>
+      <ul>
+        <li>
+          <strong>Your basic Google profile</strong> (name, email address and profile picture). Google Sign-In
+          provides this; Train does not store or use it beyond completing sign-in.
+        </li>
+        <li>
+          <strong>Access to the files Train creates in your Google Drive</strong> (the
+          <code>drive.file</code> scope). Train creates one spreadsheet and writes your recorded workout history
+          to it (date, name, type, duration, distance, notes and ratings), overwriting it after each change.
+          This scope does not let Train see or change any other file in your Drive.
+        </li>
+      </ul>
+      <p>
+        Your workout data goes directly from your device to Google. It never passes through any server run by
+        Train's developer. Sign-in tokens are kept in the iOS Keychain on your device. You can turn sync off in
+        the app at any time, remove Train's access at
+        <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, and delete the
+        spreadsheet from your Drive yourself.
+      </p>
+      <p>
+        Train's use and transfer of information received from Google APIs adheres to the
+        <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+        including the Limited Use requirements. Google user data is used only to provide the Sheets sync you
+        turned on. It is not transferred to anyone else, not used for advertising, and not used to train AI models.
+      </p>
+
+      <h2>CSV import and export</h2>
+      <p>
+        Importing reads only the file you pick. Exporting creates a file that goes only where you choose to save
+        or share it.
+      </p>
+
+      <h2>Sharing, selling and tracking</h2>
+      <p>
+        Train does not sell your data, share it with third parties except as described above, show ads, or
+        track you across apps and websites.
+      </p>
+
+      <h2>Keeping and deleting your data</h2>
+      <p>
+        Your data stays on your device until you delete it in the app or delete the app, which removes it.
+        Copies you made yourself, such as a Google Sheet or exported files, stay where you put them until you
+        delete them.
+      </p>
+
+      <h2>Children</h2>
+      <p>Train is not directed at children under 13 and does not knowingly collect their data.</p>
+
+      <h2>Changes</h2>
+      <p>
+        If this policy changes, the updated version will be posted on this page with a new effective date.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions about this policy can be sent to Train's developer, Bradley Thompson, at
+        <a href="mailto:mail@bradlet.com">mail@bradlet.com</a>.
+      </p>
+    </main>
+  </body>
+</html>
